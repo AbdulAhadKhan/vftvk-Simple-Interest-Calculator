@@ -7,7 +7,8 @@ function compute()
 
     // Computations
     interest = principal * years * rate / 100;
-    endYear = new Date().getFullYear() + years;
+    crntYear = new Date().getFullYear() 
+    endYear = parseInt(crntYear) + years;
 }
 
 function rateUpdate() {
