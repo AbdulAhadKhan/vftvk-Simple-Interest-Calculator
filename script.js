@@ -7,9 +7,14 @@ function compute()
 
     // Computations
     interest = principal * years * rate / 100;
-    // crntYear = new Date().getFullYear();
-    // endYear = parseInt(crntYear) + years;
     endYear = new Date().getFullYear() + parseInt(years);
+
+    // Display Result
+    el = document.getElementById("result");
+    el.innerHTML = "If you deposit " + principal + "<br/>";
+    el.innerHTML += "at an interest rate of " + rate + "%." + "<br/>";
+    el.innerHTML += "You will recieve an amount of " + interest + ",<br/>";
+    el.innerHTML += "in the year " + endYear + ".<br/>";
 }
 
 function rateUpdate() {
